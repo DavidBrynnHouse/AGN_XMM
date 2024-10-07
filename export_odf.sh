@@ -5,7 +5,7 @@ echo "Please enter the filename with the list of ODF folder names:"
 read list_file
 
 # Read the list of names from the file
-for odf_number in $(cat $list_file); do
+for odf_number in $(cat ../$list_file); do
 
   # Create a folder for each ODF folder name if it doesn't exist
   mkdir -p "/Users/davidhouse/Documents/my_work/$odf_number"
